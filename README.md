@@ -1,4 +1,4 @@
-# Modelling Forest Fires
+# Modelling Forest Fires (In realtime using remote sensing satellite)
 
 This is a regression task, where the aim is to predict the burned area of forest fires, in the northeast region of Portugal, by using meteorological and other data. The dataset can be found at UCI Machine Learning Repository:- https://archive.ics.uci.edu/ml/datasets/forest+fires
 
