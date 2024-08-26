@@ -56,3 +56,11 @@ Forest_Fires_Pipelines.ipynb file refers to the 3rd part. Here we demonstrate st
 # Conclusion
 
 For general purpose only the four FWI components (FFMC , DMC, DC, ISI) seem sufficient in giving a very accurate prediction using the SVR model .We can monitor these using a remote sensing satellite and thus be able detect forest fires and their intensity in real time. Hence, this seems like a better practical approach in detecting and suppressing forest fires in time and would be helpful for the forest and government institutions in managing their resources efficiently.
+
+Relevant Papers:
+
+[Cortez and Morais, 2007] P. Cortez and A. Morais. A Data Mining Approach to Predict Forest Fires using Meteorological Data. In J. Neves, M. F. Santos and J. Machado Eds., New Trends in Artificial Intelligence, Proceedings of the 13th EPIA 2007 - Portuguese Conference on Artificial Intelligence, December, Guimarães, Portugal, pp. 512-523, 2007. APPIA, ISBN-13 978-989-95618-0-9.
+
+Citation Request:
+
+This dataset is public available for research. The details are described in [Cortez and Morais, 2007]. Please include this citation if you plan to use this database: [Cortez and Morais, 2007] P. Cortez and A. Morais. A Data Mining Approach to Predict Forest Fires using Meteorological Data. In J. Neves, M. F. Santos and J. Machado Eds., New Trends in Artificial Intelligence, Proceedings of the 13th EPIA 2007 - Portuguese Conference on Artificial Intelligence, December, Guimarães, Portugal, pp. 512-523, 2007. APPIA, ISBN-13 978-989-95618-0-9.
