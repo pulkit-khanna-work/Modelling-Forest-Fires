@@ -4,7 +4,7 @@ This is a regression task, where the aim is to predict the burned area of forest
 
 Dataset and attribute Information can be found in info.md file in the main folder.
 
-The output variable 'area' is very skewed towards 0.0. There are different approaches/techniques that can be tried to find a suitable model as mentioned below. We will be using the log(1+x) transformation here and deomnstrate how for evaluation we can use Regression Error Characteristic (REC) curves, based on the research paper (https://www.researchgate.net/publication/221345080_Regression_Error_Characteristic_Curves) by Jinbo Bi and Kristin P. Bennett.
+There are different approaches/techniques that can be tried to find a suitable model as mentioned below.
 
 1) Using log(1+x) transformation on the outcome variable
 2) Using Poisson Zero Inflated Model and discretizing the outcome variable,
@@ -14,8 +14,11 @@ The output variable 'area' is very skewed towards 0.0. There are different appro
 6) Using an advanced technique like Density-based Weighting (https://link.springer.com/article/10.1007/s10994-021-06023-5)
 7) Tweedie Zero gradient boosting for extremely unbalanced zero inflated data (https://www.math.mcgill.ca/yyang/resources/papers/CSSC_EMTboost.pdf)
 
-The data analysis is divided into 3 parts/files. The first part covers data wrangling and EDA, the second parts consists of scaling and modelling and in the last part we will be building our pipeline that will simplify our model deployment in the end.
 
+# Approach
+The output variable 'area' is very skewed towards 0. We will be using the log(1+x) transformation here and demonstrate how for evaluation we can use Regression Error Characteristic (REC) curves, based on the research paper (https://www.researchgate.net/publication/221345080_Regression_Error_Characteristic_Curves) by Jinbo Bi and Kristin P. Bennett.
+
+The data analysis is divided into 3 parts/files. The first part covers data wrangling and EDA, the second parts consists of scaling and modelling and in the last part we will be building our pipeline that will simplify our model deployment in the end.
 
 * <h3> Data Wrangling and EDA - </h3>
 Forest_Fires_Wrangling.ipynb file refers to the first part and shows step by step with comments on how to perform Exploratory Data Analysis(EDA). Various techniques will be performed such as "Log(1+x) Transformation", "Plotting(Boxplots, Histograms)", Cyclical Encoding etc.
@@ -48,3 +51,8 @@ Link for the research paper on REC curve by Jinbo Bi and Kristin P. Bennett :-
 
 * <h3> Building Pipelines - </h3>
 Forest_Fires_Pipelines.ipynb file refers to the 3rd part. Here we demonstrate step by step with comments how to build pipeline using sklearn to simplify our model deployment for our first setup  i.e. STMFWI using our best model with most optimum parameters and predicting the outcome variable. Here we will demonstrate how to build custom transformers (for custom function/operations) that can be fitted to our pipeline and usage of columns transformer. 
+
+
+# Conclusion
+
+For general purpose only the four FWI components (FFMC , DMC, DC, ISI) seem sufficient in giving a very accurate prediction using the SVR model .We can monitor these using a remote sensing satellite and thus be able detect forest fires and their intensity in real time. Hence, this seems like a better practical approach in detecting and suppressing forest fires in time and would be helpful for the forest and government institutions in managing their resources efficiently.
